@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>larr</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e0e10;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #ff416c, #ff4b2b);
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .note {
+      background: #222;
+      color: #ffcc00;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background: #1a1a1a;
+      border-bottom: 2px solid #ff4b2b;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 12px;
+      font-size: 0.95em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    nav button:hover {
+      color: #ff4b2b;
+    }
+    .container {
+      display: none;
+      padding: 15px;
+      animation: fade 0.5s ease-in-out;
+    }
+    .active {
+      display: block;
+    }
+    .item {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 10px 0;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+    }
+    .item h4 {
+      margin: 5px 0;
+      color: #ff4b2b;
+    }
+    .wa-btn {
+      display: block;
+      text-align: center;
+      background: #25d366;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    @keyframes fade {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+<header>🛒 Larr — LIST JUALAN</header>
+<div class="note">⚠️ List di sini tidak lengkap, jika ingin yang lengkap silahkan chat admin.</div>
+
+<nav>
+  <button onclick="showMenu('premium')">💼 Account Premium</button>
+  <button onclick="showMenu('diamond')">💎 Top Up Diamond ML</button>
+  <button onclick="showMenu('weekly')">🗓️ Weekly Diamond Pass</button>
+  <button onclick="showMenu('starlight')">🌟 Starlight ML</button>
+</nav>
+
+<!-- Account Premium -->
+<div id="premium" class="container active">
+  <h3>💼 Account Premium</h3>
+  <div class="item"><h4>ChatGPT</h4> 1 Minggu: 14k | 1 Bulan: 30k | Private: 70k</div>
+  <div class="item"><h4>Alight Motion</h4> 1 Tahun Private: 5k</div>
+  <div class="item"><h4>YouTube</h4> FamPlan: 5k | FamHead: 8k | IndPlan: 8k</div>
+  <div class="item"><h4>Canva</h4> 1 Bulan: 3k | 2 Bulan: 5k | 5 Bulan: 10k | Pro Admin: 6k | EDU Lifetime: 12k | Pro Owner: 20k</div>
+  <div class="item"><h4>Spotify</h4> 1 Bulan IndPlan: 6k | FamPlan: 18k</div>
+  <div class="item"><h4>Netflix</h4> 1P2U: 15k | 1P1U: 23k | SemiPriv: 30k | Private: 127k</div>
+  <div class="item"><h4>Disney+</h4> Sharing: 18k | Private: 43k</div>
+</div>
+
+<!-- Diamond ML -->
+<div id="diamond" class="container">
+  <h3>💎 Top Up Diamond ML</h3>
+  <div class="item"><h4>3 Diamond</h4> Rp1.000</div>
+  <div class="item"><h4>5 Diamond</h4> Rp2.000</div>
+  <div class="item"><h4>10 Diamond</h4> Rp3.000</div>
+  <div class="item"><h4>15 Diamond</h4> Rp5.000</div>
+  <div class="item"><h4>30 Diamond</h4> Rp9.000</div>
+  <div class="item"><h4>50 Diamond</h4> Rp16.000</div>
+  <div class="item"><h4>80 Diamond</h4> Rp25.000</div>
+  <div class="item"><h4>100 Diamond</h4> Rp30.000</div>
+  <div class="item"><h4>150 Diamond</h4> Rp44.000</div>
+  <div class="item"><h4>185 Diamond</h4> Rp53.000</div>
+  <div class="item"><h4>222 Diamond</h4> Rp63.000</div>
+  <div class="item"><h4>250 Diamond</h4> Rp71.000</div>
+  <div class="item"><h4>278 Diamond</h4> Rp79.000</div>
+  <div class="item"><h4>300 Diamond</h4> Rp84.000</div>
+  <div class="item"><h4>408 Diamond</h4> Rp113.000</div>
+  <div class="item"><h4>600 Diamond</h4> Rp163.000</div>
+  <div class="item"><h4>750 Diamond</h4> Rp204.000</div>
+  <div class="item"><h4>882 Diamond</h4> Rp237.000</div>
+  <div class="item"><h4>966 Diamond</h4> Rp255.000</div>
+  <div class="item"><h4>1756 Diamond</h4> Rp467.000</div>
+  <div class="item"><h4>1850 Diamond</h4> Rp487.000</div>
+  <div class="item"><h4>2580 Diamond</h4> Rp608.000</div>
+  <div class="item"><h4>2976 Diamond</h4> Rp760.000</div>
+  <div class="item"><h4>3738 Diamond</h4> Rp965.000</div>
+</div>
+
+<!-- Weekly -->
+<div id="weekly" class="container">
+  <h3>🗓️ Weekly Diamond Pass</h3>
+  <div class="item"><h4>1x Weekly Pass</h4> Rp31.000</div>
+  <div class="item"><h4>2x Weekly Pass</h4> Rp59.000</div>
+  <div class="item"><h4>4x Weekly Pass</h4> Rp116.000</div>
+  <div class="item"><h4>5x Weekly Pass</h4> Rp145.000</div>
+</div>
+
+<!-- Starlight -->
+<div id="starlight" class="container">
+  <h3>🌟 Starlight ML</h3>
+  <div class="item"><h4>Starlight Member</h4> Rp84.000</div>
+  <div class="item"><h4>Starlight Member Plus</h4> Rp204.000</div>
+</div>
+
+<a class="wa-btn" href="https://wa.me/6282283996884" target="_blank">💬 Chat Admin via WhatsApp</a>
+
+<script>
+  function showMenu(id) {
+    const menus = document.querySelectorAll('.container');
+    menus.forEach(menu => menu.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
